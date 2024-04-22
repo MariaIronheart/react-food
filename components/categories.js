@@ -1,7 +1,7 @@
 import { View, Text } from "react-native"
 import React from "react"
 import { ScrollView, TouchableOpacity } from "react-native-web"
-import { categories } from "../constants"
+import { categories } from '../constants/categories'
 
 export default function Categories () {
     return (

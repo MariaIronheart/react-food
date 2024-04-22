@@ -1,37 +1,3 @@
-export const categories = [
-    {
-        id: 1,
-        name: "Pizza",
-        image: require('../assets/images/pizza.png')
-    },
-    {
-        id: 2,
-        name: "Hambúrguer",
-        image: require('')
-    },
-    {
-        id: 3,
-        name: "Macarrão",
-        image: require('')
-    },
-    {
-        id: 4,
-        name: "Lámen",
-        image: require('')
-    },
-    {
-        id: 5,
-        name: "Porção",
-        image: require('')
-    },
-    {
-        id: 6,
-        name: "Peixe",
-        image: require('')
-    }
-    
-]
-
 export const featured = {
     id:1,
     title: 'Hot and Spicy',
