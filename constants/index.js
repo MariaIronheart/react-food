@@ -2,7 +2,7 @@ export const categories = [
     {
         id: 1,
         name: "Pizza",
-        image: require('../assets/images/pizza.jpeg')
+        image: require('../assets/images/pizza.png')
     },
     {
         id: 2,
