@@ -2,7 +2,7 @@ export const categories = [
     {
         id: 1,
         name: "Pizza",
-        image: require('C:\temp\delivery\delivery\yakisoba.jpeg')
+        image: require('../assets/images/pizza.jpeg')
     },
     {
         id: 2,
