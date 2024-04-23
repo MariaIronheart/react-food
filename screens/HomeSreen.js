@@ -6,6 +6,8 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { themeColors } from '../theme';
 import { ScrollView } from 'react-native';
 import Categories from '../components/categories';
+import { featured } from '../constants';
+import FeaturedRow from '../components/featuredRow';
 
 
 
@@ -35,6 +37,24 @@ export default function HomeScreen () {
             }}
             >
             <Categories/>
+
+            {/*Featured*/}
+            <View className="mt-5">
+            {
+                [featured, featured, featured].map((item, index)=>{
+                    return (
+                        <FeaturedRow
+                            key={index}
+                            title={item.title}
+                            restaurants={item.restaurants}
+                            description={item.description}
+                        />
+                    )
+                })
+            }
+
+            </View>
+
 
             </ScrollView>
 
