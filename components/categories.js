@@ -1,7 +1,8 @@
-import { View, Text } from "react-native"
-import React, { useState } from "react"
-import { ScrollView, TouchableOpacity } from "react-native-web"
-import { categories } from '../constants/categories'
+import { View, Text ,ScrollView, TouchableOpacity, Image} from "react-native"
+import React from "react"
+import { useState } from "react";
+import { categories } from "../constants";
+
 
 export default function Categories () {
     const [activeCategory, setActiveCategory] = useState(null);
@@ -26,7 +27,7 @@ export default function Categories () {
                                 onPress={()=> setActiveCategory(category.id)}
                                 className={"p-1 rounded-full shadow bg-gray-200 "+btnClass}>
                                 <Image style = {{width: 45, height: 45}}
-                                    source={category.name} />
+                                    source={category.image} />
                                 </TouchableOpacity>
                                 <Text className={"text-sm"+textClass}>{category.name}</Text>
                             </View>
@@ -37,3 +38,4 @@ export default function Categories () {
         </View>
     )
 }
+

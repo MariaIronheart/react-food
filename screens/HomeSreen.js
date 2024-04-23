@@ -8,6 +8,7 @@ import { ScrollView } from 'react-native';
 import Categories from '../components/categories';
 
 
+
 export default function HomeScreen () {
     return (
         <SafeAreaView className="bg-white">
