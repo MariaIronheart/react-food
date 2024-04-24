@@ -42,7 +42,7 @@ export const featured = {
         {
             id:1,
             name:'KFC',
-            image:require('../images/papa.jpg'),
+            image:require('../images/KFC.webp'),
             description:'O melhor frango frito.',
             lng:-23.022694318353167,
             lat: -45.58184825767548,
@@ -56,21 +56,21 @@ export const featured = {
                     name: 'Frango Frito',
                     description: 'Porçao média de frango frito',
                     price: 25,
-                    image: require('../images/papa.jpg') 
+                    image: require('../images/frango.jpeg') 
                 },
                 {
                     id: 2,
                     name: 'Frango Frito',
                     description: 'Porção média de frango frito',
                     price: 25,
-                    image: require('../images/papa.jpg') 
+                    image: require('../images/frango.jpeg') 
                 },
                 {
                     id: 3,
                     name: 'Frango Frito',
                     description: 'Porção média de frango frito',
                     price: 25,
-                    image: require('../images/papa.jpg')
+                    image: require('../images/frango.jpeg')
                 },
                 
             ]

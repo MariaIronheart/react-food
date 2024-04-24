@@ -8,7 +8,7 @@ export default function RestaurantCard({item}) {
     const navigation = useNavigation();
   return (
     <TouchableWithoutFeedback
-        onPress={()=> navigation.navigate('Restaurant', {...item})}
+        onPress={()=> navigation.navigate('Restaurante', {...item})}
     >
        <View 
        style={{
@@ -28,9 +28,10 @@ export default function RestaurantCard({item}) {
                     </Text>
                 </Text>   
             </View>
-            <View className="flex-row items-center space-x-1"></View>
-            <Icon.MapPin color="gray" height="15" widht="15"/>
+            <View className="flex-row items-center space-x-1">
+                <Icon.MapPin color="gray" height="15" widht="15"/>
                 <Text className="text-gray-700 text-xs">Nearby • {item.address} </Text>
+            </View>        
         </View>
         </View>   
             </TouchableWithoutFeedback>
