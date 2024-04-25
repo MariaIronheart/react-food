@@ -1,11 +1,11 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
-import { View , Text} from 'react-native';
 import HomeScreen from './screens/HomeSreen';
 import RestaurantScreen from './screens/RestaurantScreen';
-import CartScreen from './screens/cartScreen';
-
+import CartScreen from './screens/CartScreen';
+import OrderPrepairingScreen from './screens/OrderPrepairingscreen';
+import DeliveryScreen from './screens/DeliveryScreen';
 
 
 const Stack = createNativeStackNavigator();
@@ -16,7 +16,9 @@ export default function Navigation()  {
           <Stack.Navigator screenOptions={{headerShown: false}}>
             <Stack.Screen name="Home" component={HomeScreen}  />
             <Stack.Screen name="Restaurante" component={RestaurantScreen} />
-            <Stack.Screen name="Cart" options={{presentation: 'modal'}} component={CartScreen} />
+            <Stack.Screen name="Cart" options={{presentation: 'modal'}} component={CartScreen}/>
+            <Stack.Screen name="Preparando pedido" options={{presentation: 'fullScreenModal'}} component={OrderPrepairingScreen} />
+            <Stack.Screen name="Delivery" options={{presentation: 'fullScreenModal'}} component={DeliveryScreen} />
           </Stack.Navigator>
         </NavigationContainer>
       );
