@@ -18,7 +18,7 @@ export default function RestaurantScreen () {
     const dispach = useDispatch;
 
     useEffect(() => {
-        if(otem && item.id){
+        if(item && item.id){
             dispach(setRestaurant({...item}))
         }
     },[]
