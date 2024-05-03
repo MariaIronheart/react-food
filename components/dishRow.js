@@ -7,15 +7,15 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addToCart, removeFromCart, selectCartItemsById } from '../slices/cartSlice';
 
 export default function DishRow({item}) {
-    const dispath = useDispatch;
+    const dispatch = useDispatch;
     const totalItems = useSelector(state => selectCartItemsById(state, item.id));
 
     const hanldeIncrease = () => {
-        dispath=(addToCart({...item}))
+        dispatch=(addToCart({...item}))
     }
 
     const hanldeDecrease = () => {
-        dispath(removeFromCart({id: item.id}))
+        dispatch(removeFromCart({id: item.id}))
     }
 
   return (

@@ -4,7 +4,7 @@ const initialState = {
   restaurant: null,
 }
 
-export const counterSlice = restaurantSlice({
+export const restaurantSlice = createSlice({
   name: 'restaurant',
   initialState,
   reducers: {
