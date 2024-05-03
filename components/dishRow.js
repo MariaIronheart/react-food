@@ -7,14 +7,14 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addToCart, removeFromCart, selectCartItemsById } from '../slices/cartSlice';
 
 export default function DishRow({item}) {
-    const dispatch = useDispatch;
+    const dispatch = useDispatch();
     const totalItems = useSelector(state => selectCartItemsById(state, item.id));
 
-    const hanldeIncrease = () => {
-        dispatch=(addToCart({...item}))
+    const handleIncrease = () => {
+        dispatch(addToCart({...item}))
     }
 
-    const hanldeDecrease = () => {
+    const handleDecrease = () => {
         dispatch(removeFromCart({id: item.id}))
     }
 
@@ -33,18 +33,18 @@ export default function DishRow({item}) {
                 </Text>
                 <View className="flex-row items-center">
                     <TouchableOpacity
-                    onPress={hanldeDecrease}
-                    disabled={!totalItems.lenght}
+                    onPress={handleDecrease}
+                    disabled={!totalItems.length}
                     className="p-1 rounded-full"
                     style={{backgroundColor: themeColors.bgColor(1)}}
                     >
                         <Icon.Minus strokeWidth={2} height={20} width={20} stroke={'white'} />
                     </TouchableOpacity>
                     <Text className="px-3">
-                        {totalItems.lenght}
+                        {totalItems.length}
                     </Text>
                     <TouchableOpacity
-                        onPress={hanldeIncrease}
+                     onPress={handleIncrease}
                     className="p-1 rounded-full"
                     style={{backgroundColor: themeColors.bgColor(1)}}
                     >
