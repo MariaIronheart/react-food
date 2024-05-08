@@ -10,27 +10,27 @@ export const categories = [
     {
         id: 2,
         name: "Hambúrguer",
-        image: require('../images/hamburguer.js')
+        image: require('../images/icone-hamburger.png')
     },
     {
         id: 3,
         name: "Italiana",
-        image: require('../images/icone-pizza.png')
+        image: require('../images/icone-spaghetti.png')
     },
     {
         id: 4,
-        name: "Árabe",
-        image: require('../images/icone-pizza.png')
+        name: "Sobremesas",
+        image: require('../images/icone-cupcake.png')
     },
     {
         id: 5,
         name: "Japonesa",
-        image: require('../images/icone-pizza.png')
+        image: require('../images/icone-tropicalfish.png')
     },
     {
         id: 6,
-        name: "Carnes",
-        image: require('../images/icone-pizza.png')
+        name: "Chinesa",
+        image: require('../images/icone-takeoutbox.png')
     }
 ]
 
@@ -60,17 +60,17 @@ export const featured = {
                 },
                 {
                     id: 2,
-                    name: 'Frango Frito',
-                    description: 'Porção média de frango frito',
-                    price: 25,
-                    image: require('../images/frango.jpeg') 
+                    name: 'Chicken Burguer',
+                    description: 'Hamburguer de frango frito',
+                    price: 30,
+                    image: require('../images/hamburguer.png') 
                 },
                 {
                     id: 3,
-                    name: 'Frango Frito',
-                    description: 'Porção média de frango frito',
-                    price: 25,
-                    image: require('../images/frango.jpeg')
+                    name: 'Balde de frango',
+                    description: 'Porção grande de frango frito',
+                    price: 35,
+                    image: require('../images/baldefrango.jpeg')
                 },
                 
             ]
@@ -78,7 +78,7 @@ export const featured = {
         {
             id:2,
             name:'Kanpek',
-            image:require('../images/papa.jpg'),
+            image:require('../images/kanpeak.jpg'),
             description:'O melhor Sushi',
             lng:-23.022694318353167,
             lat: -45.58184825767548,
@@ -89,10 +89,10 @@ export const featured = {
             dishes: [
                 {
                     id: 1,
-                    name: 'Frango Frito',
-                    description: 'Porçao média de frango frito',
-                    price: 25,
-                    image: require('../images/papa.jpg') 
+                    name: 'Guioza',
+                    description: 'Porçao 5 unid',
+                    price: 18,
+                    image: require('../images/guioza.jpg') 
                 },
                 {
                     id: 2,
