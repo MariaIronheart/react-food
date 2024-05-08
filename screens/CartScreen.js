@@ -31,7 +31,7 @@ export default function CartScreen () {
             return group;
         },{})
         setGroupedItems(items);
-    }, {cartItems})
+    }, [cartItems])
     return (
         <View className="bg-white flex-1">
             <View className="relative py-4 shadow-sm">
@@ -68,7 +68,7 @@ export default function CartScreen () {
                 className="bg-white pt-5">
                  {
                     Object.entries(groupedItems).map((key, items) => {
-                        let dish = items[0];
+                        const dish = items[0];
                         return (
                             <View key={key}
                                 className="flex-row items-center space-x-3 py-2 px-4 bg-white rounded-3xl mx-2 mb-3 shadow-md">
@@ -118,3 +118,4 @@ export default function CartScreen () {
         </View>
     )
 }
+

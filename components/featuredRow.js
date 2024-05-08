@@ -4,6 +4,7 @@ import { themeColors } from '../theme';
 import RestaurantCard from './restaurantCard';
 
 
+
 export default function FeaturedRow({title, description, restaurants}) {
   return (
     <View>

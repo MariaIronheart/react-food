@@ -10,7 +10,7 @@ export const categories = [
     {
         id: 2,
         name: "Hambúrguer",
-        image: require('../images/icone-pizza.png')
+        image: require('../images/hamburguer.js')
     },
     {
         id: 3,

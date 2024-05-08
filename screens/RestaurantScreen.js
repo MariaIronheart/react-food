@@ -14,7 +14,7 @@ import { setRestaurant } from '../slices/restaurantSlice';
 export default function RestaurantScreen () {
     const {params} = useRoute();
     const navigation = useNavigation();
-    let item = params;
+    const item = params;
     const dispatch = useDispatch();
 
     useEffect(() => {
