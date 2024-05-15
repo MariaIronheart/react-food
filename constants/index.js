@@ -36,7 +36,7 @@ export const categories = [
 
 export const featured = {
     id:1,
-    title: 'Hot and Spicy',
+    title: 'Restaurantes',
     description:'Frango macio e suculento',
     restaurants: [
         {
@@ -145,6 +145,10 @@ export const featured = {
                 },
             ]
         },],
+    
+}
+
+export const res = {
     id:2,
     title: 'Ótimas opções',
     description:'Frango macio e suculento',
@@ -257,8 +261,11 @@ export const featured = {
             ]
         },
     ],
+}
+
+export const odio = {   
     id:3,
-    title: 'Esperimente',
+    title: 'Experimente',
     description:'Novas opções',
     restaurants: [
         {

@@ -7,6 +7,8 @@ import { themeColors } from '../theme';
 import { ScrollView } from 'react-native';
 import Categories from '../components/categories';
 import { featured } from '../constants';
+import { res } from '../constants';
+import { odio } from '../constants';
 import FeaturedRow from '../components/featuredRow';
 
 
@@ -41,7 +43,7 @@ export default function HomeScreen () {
             {/*Featured*/}
             <View className="mt-5">
             {
-                [featured, featured, featured].map((item, index)=>{
+                [featured, res, odio].map((item, index)=>{
                     return (
                         <FeaturedRow
                             key={index}
